@@ -101,8 +101,7 @@ root# nano /var/www/html/waf/error.html
 root# nano /etc/nginx/nginx.conf
 
 include /etc/nginx/naxsi_core.rules;
-
-include /etc/nginx/mime.type;
+include /etc/nginx/mime.types;
 default_type application/octet-stream;
 include /etc/nginx/naxi_core.rules;
 
