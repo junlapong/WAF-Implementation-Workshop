@@ -99,6 +99,7 @@ root# nano /var/www/html/waf/error.html
 </html>
 
 root# nano /etc/nginx/nginx.conf
+
 include /etc/nginx/naxsi_core.rules;
 
 include /etc/nginx/mime.type;
@@ -109,7 +110,7 @@ root# rm -rf /etc/nginx/sites-enabled/default
 root# nano /etc/nginx/conf.d/waf.conf
 
 server {
-	listen 90;
+	listen 80;
 	listen [::[:80;
 	server_name www.local.net;
 	server_tokens off;
